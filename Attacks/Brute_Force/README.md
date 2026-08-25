@@ -9,7 +9,7 @@ Brute Force is an attack method where the attacker systematically tries multiple
 - Potential privilege escalation.
 
 ## 📷 Screenshot (Before Rules)
-![Brute Force Screenshot]()
+![Brute Force Screenshot](../before_rules/brute_force.png)
 
 ## 🛡️ Defense (After Rules)
 - Enforce strong password policies.
