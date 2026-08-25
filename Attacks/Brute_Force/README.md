@@ -23,7 +23,7 @@ In the `before_rules` phase, the attacker repeatedly attempts logins using autom
 ## 🛡️ Defense Demonstration (After Rules)
 In the `after_rules` phase, security measures are applied to stop the attack.  
 📷 **Screenshot:**  
-![Defense Screenshot](../../after_rules/brute_force_defense.png)
+![Defense Screenshot]([../../after_rules/brute_force_defense.png](https://github.com/Ma7modTa7on/Vertex_Network_Security_Project/tree/215f5ba8a15692d781794fcd5c7651792bea96ab/Attacks/Brute_Force/After_Rules))
 
 ---
 
