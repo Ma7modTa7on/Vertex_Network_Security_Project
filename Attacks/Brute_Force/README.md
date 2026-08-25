@@ -16,11 +16,18 @@ Brute Force is a **systematic attack technique** where an attacker attempts to g
 ## 🧪 Attack Demonstration (Before Rules)
 In the `before_rules` phase, the attacker repeatedly attempts logins using automated tools.  
 📷 **Screenshot:**  
-![Brute Force Screenshots](https://github.com/Ma7modTa7on/Vertex_Network_Security_Project/tree/cb1ec0fde4eba68b816efce3bab195d620a5bcd3/Attacks/Brute_Force/Before_Rules)
+![Brute Force Screenshot](../../before_rules/brute_force.png)
 
 ---
 
-## 🛡️ Defense Mechanisms (After Rules)
+## 🛡️ Defense Demonstration (After Rules)
+In the `after_rules` phase, security measures are applied to stop the attack.  
+📷 **Screenshot:**  
+![Defense Screenshot](../../after_rules/brute_force_defense.png)
+
+---
+
+## 🛡️ Defense Mechanisms
 To mitigate Brute Force attacks, the following security measures are applied:
 
 1. **Strong Password Policies**  
