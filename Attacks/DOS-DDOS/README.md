@@ -65,8 +65,8 @@ In the `After_Rules` phase, defensive rules and traffic-control mechanisms are a
 
 ## 👨‍💻 Author
 
-- Mahmoud Ta7on
-- salma ghareeb
-- waad wael
+- **Mahmoud Ta7on**
+-**salma ghareeb**
+- **waad wael**
 - Cybersecurity & Network Security Enthusiast
 
