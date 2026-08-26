@@ -65,8 +65,8 @@ In the `After_Rules` phase, network security controls are applied to reduce the 
 
 ## 👨‍💻 Author
 
-- Mahmoud Ta7on
-- salma ghareeb
-- waad wael
+- **Mahmoud Ta7on**
+- **salma ghareeb**
+- **waad wael**
 - Cybersecurity & Network Security Enthusiast
 
