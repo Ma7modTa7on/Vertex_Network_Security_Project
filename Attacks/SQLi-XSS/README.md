@@ -69,8 +69,8 @@ In the `After_Rules` phase, security rules and input protection mechanisms are a
 
 ## 👨‍💻 Author
 
-- Mahmoud Ta7on
-- salma ghareeb
-- waad wael
+- **Mahmoud Ta7on**
+- **salma ghareeb**
+- **waad wael**
 - Cybersecurity & Network Security Enthusiast
 
