@@ -52,6 +52,6 @@ To mitigate Brute Force attacks, the following security measures are applied:
 
 ## 👨‍💻 Author
 - **Mahmoud Ta7on**
--**salma ghareeb**
+- **salma ghareeb**
 - **waad wael**
 - Cybersecurity & Network Security Enthusiast
