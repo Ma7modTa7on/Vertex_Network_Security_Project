@@ -1,10 +1,9 @@
-# Vertex_Network_Security_Project
+🛡️ Vertex Network Security Project
 Segment Enterprise Network Security Lab
-
 
 A practical Enterprise Network Security Lab designed to simulate common cyber attacks, analyze their impact, and implement defensive security controls using network segmentation, firewall rules, and OPNsense.
 
- Project Overview
+🎯 Project Overview
 
 This project simulates a segmented enterprise network containing different security zones such as:
 
@@ -239,13 +238,13 @@ This project is intended for educational and authorized security testing only.
 
 All attacks should be performed inside a controlled laboratory environment or against systems for which you have explicit authorization.
 
+
 👨‍💻 Author
 
 **Ma7modTa7on**
 **salma ghareeb**
 **waad wael**
 
-⭐ Vertex Network Security Project
 
-Learn the attack → Understand the vulnerability → Build the defense → Secure the network.
-:::{"fallbackMarkdown":"","reference":{"matched_text":" ","prefix":null,"start_idx":7349,"end_idx":7349,"safe_urls":[],"refs":[],"alt":"","prompt_text":null,"type":"sources_footnote","sources":[{"title":"GitHub - Ma7modTa7on/Vertex_Network_Security_Project: Segment Enterprise Network Security Lab · GitHub","url":"https://github.com/Ma7modTa7on/Vertex_Network_Security_Project/tree/main","attribution":"GitHub"}],"has_images":false},"showLoginRequiredCard":false}
+
+
