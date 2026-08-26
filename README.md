@@ -70,22 +70,7 @@ Web attacks that attempt to exploit insecure user input.
 - Parameterized Queries
 - Output Encoding
 
-## 🏗️ Project Structure
 
-```text
-Vertex_Network_Security_Project/
-│
-├── Attacks/
-│   ├── Brute_Force/
-│   ├── DMZ_to_LAN/
-│   ├── DoS_DDoS/
-│   ├── MITM_ARP_Spoofing/
-│   ├── Nmap/
-│   └── SQLi_XSS/
-│
-├── Network_Topology/
-├── OPNsense/
-└── README.md
 
 👨‍💻 Author
 
