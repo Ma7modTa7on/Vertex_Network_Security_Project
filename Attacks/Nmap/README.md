@@ -31,7 +31,7 @@ The attacker scans the network to identify reachable hosts, open ports, and expo
 
 In the `After_Rules` phase, network security rules are applied to reduce unnecessary exposure and restrict unauthorized scanning activity.
 
-📷 Screenshot:
+📷 Screenshot https://github.com/Ma7modTa7on/Vertex_Network_Security_Project/tree/main/Attacks/Nmap/After_Rules
 
 * * *
 
