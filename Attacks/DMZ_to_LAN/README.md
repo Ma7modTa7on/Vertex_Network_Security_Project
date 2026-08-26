@@ -68,8 +68,8 @@ Only explicitly required communication is allowed.
 
 ## 👨‍💻 Author
 
-- Mahmoud Ta7on
-- salma ghareeb
-- waad wael
+- **Mahmoud Ta7on**
+- **salma ghareeb**
+-**waad wael**
 - Cybersecurity & Network Security Enthusiast
 
