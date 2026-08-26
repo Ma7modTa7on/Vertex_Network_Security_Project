@@ -1,243 +1,91 @@
-🛡️ Vertex Network Security Project
-Segment Enterprise Network Security Lab
+# 🛡️ Vertex Network Security Project
 
-A practical Enterprise Network Security Lab designed to simulate common cyber attacks, analyze their impact, and implement defensive security controls using network segmentation, firewall rules, and OPNsense.
+## 📌 Project Overview
 
-🎯 Project Overview
+This project is an **Enterprise Network Security Lab** designed to demonstrate common network attacks and their defenses using a virtual network environment.
 
-This project simulates a segmented enterprise network containing different security zones such as:
+The project covers different attack scenarios and shows the network behavior **Before and After applying security rules**.
 
-🌐 WAN
-🛡️ DMZ
-🔐 LAN
+## 🎯 Project Objectives
 
-The main goal is to demonstrate how attackers can exploit network and application weaknesses and how defensive security controls can be used to detect, block, and reduce the impact of these attacks.
+- Understand common network attacks.
+- Demonstrate how attacks affect an enterprise network.
+- Apply security rules to prevent or reduce attacks.
+- Compare the network **Before vs After** security configuration.
+- Practice network segmentation and firewall security.
 
-⚔️ Attacks Covered
+## 🔥 Attacks Covered
 
-The project demonstrates the following security scenarios:
+### 1. Brute Force 🔑
 
-Attack	Description	Main Defense
-🔑 Brute Force	Repeated login attempts to gain unauthorized access	Rate Limiting, Account Lockout, MFA
-🌐 DMZ → LAN	Attempt to move from a compromised DMZ system into the internal network	Firewall Rules & Network Segmentation
-🚨 DoS / DDoS	Overloading a service to make it unavailable	Traffic Filtering & Rate Limiting
-🕵️ MITM / ARP Spoofing	Intercepting traffic between network devices	ARP Protection & Network Segmentation
-🔍 Nmap Reconnaissance	Discovering hosts, ports, and exposed services	Firewall & Service Restriction
-💉 SQL Injection	Exploiting insecure database queries	Prepared Statements & Input Validation
-🌐 XSS	Injecting malicious scripts into web applications	Output Encoding & CSP
-🏗️ Network Architecture
-                         INTERNET
-                            |
-                            |
-                       ┌───────────┐
-                       │ OPNsense  │
-                       │ Firewall  │
-                       └─────┬─────┘
-                             |
-              ┌──────────────┴──────────────┐
-              |                             |
-             DMZ                           LAN
-              |                             |
-        ┌───────────┐                ┌───────────┐
-        │ Web/App   │                │ Internal  │
-        │ Servers   │                │ Systems   │
-        └───────────┘                └───────────┘
+Attempts to gain unauthorized access by trying multiple passwords.
 
-🔐 Security Concept
+**Defense:**
+- Strong Password Policy
+- Account Lockout
+- Multi-Factor Authentication (MFA)
 
-The network follows the principle of:
+### 2. DMZ to LAN Attack 🌐
 
-"Assume Breach + Defense in Depth"
+Attempts to move from a public-facing DMZ server into the internal LAN.
 
-A compromised machine should not automatically provide access to the rest of the network.
+**Defense:**
+- Network Segmentation
+- Firewall Rules
+- Restrict DMZ-to-LAN Traffic
 
-🛡️ Defense Strategy
+### 3. DoS / DDoS 🚨
 
-The project uses multiple security layers:
+Floods a service with a large number of requests to make it unavailable.
 
-                    SECURITY
-                       |
-        ┌──────────────┼──────────────┐
-        |              |              |
-     Firewall      Segmentation    Authentication
-        |              |              |
-        └──────────────┼──────────────┘
-                       |
-                  Monitoring
-                       |
-                    Logging
-                       |
-                   Detection
-                       |
-                   Response
+**Defense:**
+- Rate Limiting
+- Firewall Rules
+- Traffic Monitoring
 
-Main Defensive Controls
-🔥 Firewall Rules
-🧱 Network Segmentation
-🔐 Access Control
-🔑 Strong Authentication
-🚦 Rate Limiting
-🕵️ Network Monitoring
-📋 Logging
-🛡️ Least Privilege
-🔎 IDS/IPS concepts
-🔥 OPNsense
+### 4. MITM / ARP Spoofing 🕵️
 
-OPNsense is used as the main firewall/security component of the lab.
+Attempts to intercept communication between devices by manipulating ARP information.
 
-It is responsible for controlling traffic between the different network zones.
+**Defense:**
+- ARP Inspection
+- Static ARP
+- Network Monitoring
 
-Example Security Policy
-WAN  → LAN   ❌ DENY
-WAN  → DMZ   ✅ Allow Required Services
-DMZ  → LAN   ❌ DENY
-LAN  → DMZ   ✅ Allow Required Services
-LAN  → WAN   ✅ According to Policy
+### 5. Nmap Scanning 🔍
 
+Used to discover open ports and running services on a target system.
 
-This helps prevent lateral movement and limits the impact of a compromised system.
+**Defense:**
+- Close Unnecessary Ports
+- Firewall Rules
+- Network Segmentation
 
-🧪 Testing Methodology
+### 6. SQL Injection & XSS 💉
 
-Each attack follows a simple security testing process:
+Web attacks that attempt to exploit insecure user input.
 
-        ┌───────────────┐
-        │ Initial State │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Attack/Test   │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Observe Impact│
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Apply Defense │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Repeat Test   │
-        └───────┬───────┘
-                ↓
-        ┌───────────────┐
-        │ Compare Result│
-        └───────────────┘
+**Defense:**
+- Input Validation
+- Parameterized Queries
+- Output Encoding
 
+## 🏗️ Project Structure
 
-The project therefore focuses on both:
-
-Offensive Security 🔴 + Defensive Security 🔵
-
-📂 Project Structure
+```text
 Vertex_Network_Security_Project/
 │
 ├── Attacks/
-│   │
 │   ├── Brute_Force/
-│   │
 │   ├── DMZ_to_LAN/
-│   │
-│   ├── DOS-DDOS/
-│   │
-│   ├── MITM_Arp_Spoofing/
-│   │
+│   ├── DoS_DDoS/
+│   ├── MITM_ARP_Spoofing/
 │   ├── Nmap/
-│   │
-│   └── SQLi-XSS/
+│   └── SQLi_XSS/
 │
+├── Network_Topology/
+├── OPNsense/
 └── README.md
-
-🧰 Tools & Technologies
-🛡️ OPNsense
-🐧 Linux
-🔍 Nmap
-🦈 Wireshark
-🌐 Web Security Testing Tools
-🖥️ Virtual Machines
-🔥 Firewall & ACL Rules
-🧱 Network Segmentation / VLANs
-📊 Security Objectives
-
-The project aims to demonstrate how to:
-
-Identify network vulnerabilities.
-Perform controlled security testing.
-Understand common attack techniques.
-Analyze network traffic.
-Configure firewall rules.
-Isolate critical systems.
-Prevent unauthorized access.
-Reduce lateral movement.
-Detect suspicious activity.
-Compare network security before and after applying defenses.
-🎓 Learning Outcomes
-
-By completing this project, you gain practical experience in:
-
-Network Security • Cybersecurity • Ethical Hacking • Firewall Configuration • OPNsense • Network Segmentation • Reconnaissance • Web Security • Traffic Analysis • Attack Detection • Defensive Security
-
-🔴 Offensive Security
-
-The offensive side of the project demonstrates how an attacker may:
-
-Reconnaissance
-      ↓
-Identify Services
-      ↓
-Find Vulnerabilities
-      ↓
-Attempt Exploitation
-      ↓
-Analyze Impact
-
-🔵 Defensive Security
-
-The defensive side demonstrates how a security team can:
-
-Identify Threat
-      ↓
-Apply Security Rules
-      ↓
-Block Unauthorized Traffic
-      ↓
-Monitor Network
-      ↓
-Analyze Logs
-      ↓
-Improve Security
-
-📈 Final Result
-
-The main objective is to show the difference between an unprotected network and a properly segmented and controlled network.
-
-BEFORE
-Attacker
-   ↓
-Vulnerable System
-   ↓
-Network Access
-   ↓
-Potential Lateral Movement
-
-AFTER
-Attacker
-   ↓
-Security Controls
-   ↓
-Firewall / Segmentation
-   ↓
-BLOCK / DETECT / LOG
-   ↓
-Reduced Impact
-
-⚠️ Ethical Use
-
-This project is intended for educational and authorized security testing only.
-
-All attacks should be performed inside a controlled laboratory environment or against systems for which you have explicit authorization.
-
 
 👨‍💻 Author
 
