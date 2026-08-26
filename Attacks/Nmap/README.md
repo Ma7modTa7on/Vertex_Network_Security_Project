@@ -23,7 +23,7 @@ In the `Before_Rules` phase, network scanning is performed without sufficient se
 
 The attacker scans the network to identify reachable hosts, open ports, and exposed services.
 
-📷 Screenshot:
+📷 Screenshot:Attacks/Nmap/Before_Rules
 
 * * *
 
